@@ -9,55 +9,86 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-.btn-primary{
-    
+.btn-primary {
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.25rem;
+    background: #FF900E;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
 }
 
 /* header style */
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-.nav title{
+.nav title {
     font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
 }
 
-nav > ul{
+nav>ul {
     display: flex;
 }
 
-nav li{
+nav li {
     list-style: none;
     margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
 }
 
-nav li{
+nav li {
     text-decoration: none;
     color: #424242;
 }
 
 /* banner style */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: o auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
-.banner-discription{
+
+.banner-discription {
     color: #727272;
+}
+.banner img{
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* responsive media quary */
+/* mobile device */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 50px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* tablet or medium device */
+@media screen and (min-width:576px) and (max-width: 960px) {
+    nav {
+        flex-direction: column;
+    }
 }
